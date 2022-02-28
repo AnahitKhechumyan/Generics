@@ -1,14 +1,34 @@
 package com.company;
 
-import com.company.collections.List;
-import com.company.collections.collectionsUtil.Node;
-import java.lang.reflect.Type;
-import java.util.*;
 import static javax.swing.UIManager.get;
 
 public class Main {
-    public static void main(String[] args) {
-        List<Integer> list = new List<>();
+        public static void main(String args[]) {
+
+                BinaryTree<Integer> tree = new BinaryTree<>();
+                tree.insert(5);
+                tree.insert(3);
+                tree.insert(2);
+                tree.insert(4);
+                tree.insert(9);
+                tree.insert(7);
+                tree.insert(6);
+                tree.insert(8);
+                tree.insert(12);
+                tree.insert(10);
+                tree.insert(13);
+
+                System.out.println(tree);
+                int n = tree.getSize();
+                //System.out.println(tree.height());
+                System.out.println(tree.findDepthRec(tree.root));
+
+
+        }
+
+
+}
+       /* List<Integer> list = new List<>();
 
         list.push(5);
         list.push(8);
@@ -51,6 +71,6 @@ public class Main {
         list.push(5);
        // list.push(10,-1);
         list.push(1,4);
-        System.out.println(list);
-    }
-}
+        System.out.println(list);*/
+
+
